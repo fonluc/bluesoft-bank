@@ -1,4 +1,4 @@
-#Caso Bluesoft Bank
+Caso Bluesoft Bank
 
 Bluesoft Bank es un banco tradicional que se encarga de guardar el dinero de sus ahorradores. Ofrece dos tipos de cuenta: ahorros para personas naturales y corrientes para empresas. Adicionalmente, para cada cuenta se pueden hacer consignaciones y retiros.
 
