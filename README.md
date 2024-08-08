@@ -92,4 +92,63 @@ En base a lo anterior, por favor responde los siguientes puntos:
 - **Plataforma en la Nube:** **Google Cloud**
     - **Justificación:** Ofrece servicios escalables y seguros para computación, almacenamiento y bases de datos, ideal para alojar el sistema bancario.
 
-Sube la implementación del caso a un repositorio público y comparte el enlace.
+### Sube la implementación del caso a un repositorio público y comparte el enlace.
+
+#### **1. Configuración del Entorno**
+
+1. **Creación del Directorio del Proyecto**
+
+   Se creó un nuevo directorio para el proyecto y se accedió a él desde el terminal.
+
+2. **Inicialización del Repositorio Git**
+
+   Se inicializó un repositorio Git en el directorio del proyecto.
+
+3. **Inicialización del Módulo Go**
+
+   Se inicializó un módulo Go con un nombre de módulo específico en el repositorio de Git.
+
+#### **2. Estructura de Directorios y Archivos**
+
+1. **Creación del Directorio `cmd` y Archivo `main.go`**
+
+   Se creó un directorio `cmd` y se añadió el archivo `main.go` para configurar el servidor HTTP y las rutas de la API usando Gin.
+
+2. **Creación del Directorio `internal` y Subdirectorios**
+
+   Se creó una estructura de directorios `internal` con subdirectorios para `account`, `customer`, `transaction`, `persistence`, `messaging` y `services`. Dentro de estos directorios, se crearon archivos vacíos correspondientes.
+
+3. **Contenido de los Archivos**
+
+   - **`account.go`**: Define estructuras y métodos para cuentas, transacciones y tipos de cuentas.
+   - **`transaction.go`**: Define funciones para realizar depósitos y retiros.
+   - **`customer.go`**: Define la estructura de `Customer` y el método para obtener un informe de transacciones.
+   - **`postgres.go`**: Define la función para conectar con una base de datos PostgreSQL.
+   - **`kafka.go`**: Define la función para conectar con Kafka.
+   - **`account_service.go`**: Define los manejadores de rutas para las operaciones de la API.
+
+4. **Archivos Dockerfile y `docker-compose.yml`**
+
+   - **`Dockerfile`**: Configura el entorno de ejecución de Docker para el aplicativo Go.
+   - **`docker-compose.yml`**: Configura los servicios de Docker para el aplicativo, PostgreSQL y Kafka.
+
+#### **3. Configuración del Entorno y Pruebas**
+
+1. **Configuración de la Base de Datos PostgreSQL**
+
+   - Instalación en Windows: Descargue el instalador, ejecute la instalación y configure el PostgreSQL.
+   - Creación de la base de datos y tablas necesarias usando el pgAdmin.
+
+2. **Configuración de Kafka**
+
+   - Kafka se gestiona a través de Docker. Se inicia Kafka utilizando Docker Compose.
+
+3. **Pruebas de Conexión**
+
+   - **Base de Datos**: Se actualizó el archivo `postgres.go` para probar la conexión a la base de datos PostgreSQL y se creó un archivo de prueba `test_db_connection.go` para verificar la conexión.
+   - **Kafka**: Se actualizó el archivo `kafka.go` y se creó `test_kafka_connection.go` para probar la conexión con Kafka.
+
+4. **Pruebas Adicionales**
+
+   - Se escribieron pruebas unitarias para las funciones de servicio en `internal/services/account_service_test.go`.
+   - Se probaron las rutas de la API localmente utilizando herramientas como `curl`, `Postman`, o `httpie`.
