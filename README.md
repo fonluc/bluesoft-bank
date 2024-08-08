@@ -60,5 +60,9 @@ Crea un diagrama de clases que modele el problema, identifica los elementos prin
 - **Métodos:**
     - `ObtenerInformeTransacciones(mes time.Month, año int) []Movimiento` — Obtiene el informe de transacciones del cliente para un mes específico.
 
+
+
 ¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
+
+
 Sube la implementación del caso a un repositorio público y comparte el enlace.
