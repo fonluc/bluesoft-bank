@@ -62,8 +62,6 @@ En base a lo anterior, por favor responde los siguientes puntos:
 
 ### ¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
 
-## **2. Arquitectura y Tecnologías**
-
 ### **1. Arquitectura de Microservicios:**
 
 - **Descripción:** La aplicación se divide en servicios independientes, como gestión de cuentas, movimientos e informes. Cada microservicio es responsable de una parte específica del sistema, permitiendo escalabilidad y mantenimiento independientes.
