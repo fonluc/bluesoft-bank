@@ -17,7 +17,7 @@ Listado de clientes con el número de transacciones para un mes en particular, o
 Clientes que retiran dinero fuera de la ciudad de origen de la cuenta con el valor total de los retiros realizados superior a $1.000.000.
 En base a lo anterior, por favor responde los siguientes puntos:
 
-###Crea un diagrama de clases que modele el problema, identifica los elementos principales y sus relaciones.
+### Crea un diagrama de clases que modele el problema, identifica los elementos principales y sus relaciones.
 
 ![Captura de tela 2024-08-07 213043](https://github.com/user-attachments/assets/1ca7db52-86b3-41d2-b19d-d7ca433424f4)
 
@@ -60,7 +60,7 @@ En base a lo anterior, por favor responde los siguientes puntos:
 - **Métodos:**
     - `GetTransactionReport(month time.Month, year int) []Transaction` — Obtiene el informe de transacciones del cliente para un mes específico.
 
-###¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
+### ¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
 
 ## **2. Arquitectura y Tecnologías**
 
