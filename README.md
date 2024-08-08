@@ -19,7 +19,8 @@ En base a lo anterior, por favor responde los siguientes puntos:
 
 Crea un diagrama de clases que modele el problema, identifica los elementos principales y sus relaciones.
 
-![Captura de tela 2024-08-07 210024](https://github.com/user-attachments/assets/0a03b025-bdfc-48c8-a407-6d0202ae3d7e)
+![Captura de tela 2024-08-07 213043](https://github.com/user-attachments/assets/1ca7db52-86b3-41d2-b19d-d7ca433424f4)
+
 
 ### **Estructura `Cuenta`**
 
