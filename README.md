@@ -1,7 +1,5 @@
 Caso Bluesoft Bank
 
-![Captura de tela 2024-08-07 205310](https://github.com/user-attachments/assets/9b03fd40-a3d1-4570-815e-6f2fa6cf5c02)
-
 Bluesoft Bank es un banco tradicional que se encarga de guardar el dinero de sus ahorradores. Ofrece dos tipos de cuenta: ahorros para personas naturales y corrientes para empresas. Adicionalmente, para cada cuenta se pueden hacer consignaciones y retiros.
 
 Además, debe soportar algunos requerimientos para sus ahorradores:
@@ -20,5 +18,8 @@ Clientes que retiran dinero fuera de la ciudad de origen de la cuenta con el val
 En base a lo anterior, por favor responde los siguientes puntos:
 
 Crea un diagrama de clases que modele el problema, identifica los elementos principales y sus relaciones.
+
+![Captura de tela 2024-08-07 210024](https://github.com/user-attachments/assets/0a03b025-bdfc-48c8-a407-6d0202ae3d7e)
+
 ¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
 Sube la implementación del caso a un repositorio público y comparte el enlace.
