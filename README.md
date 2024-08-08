@@ -17,7 +17,7 @@ Listado de clientes con el número de transacciones para un mes en particular, o
 Clientes que retiran dinero fuera de la ciudad de origen de la cuenta con el valor total de los retiros realizados superior a $1.000.000.
 En base a lo anterior, por favor responde los siguientes puntos:
 
-Crea un diagrama de clases que modele el problema, identifica los elementos principales y sus relaciones.
+###Crea un diagrama de clases que modele el problema, identifica los elementos principales y sus relaciones.
 
 ![Captura de tela 2024-08-07 213043](https://github.com/user-attachments/assets/1ca7db52-86b3-41d2-b19d-d7ca433424f4)
 
@@ -60,7 +60,38 @@ Crea un diagrama de clases que modele el problema, identifica los elementos prin
 - **Métodos:**
     - `GetTransactionReport(month time.Month, year int) []Transaction` — Obtiene el informe de transacciones del cliente para un mes específico.
 
-¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
+###¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
 
+## **2. Arquitectura y Tecnologías**
+
+### **1. Arquitectura de Microservicios:**
+
+- **Descripción:** La aplicación se divide en servicios independientes, como gestión de cuentas, movimientos e informes. Cada microservicio es responsable de una parte específica del sistema, permitiendo escalabilidad y mantenimiento independientes.
+
+### **2. Capas de la Arquitectura:**
+
+- **Capa de Presentación:** La interfaz de usuario interactúa con la API.
+- **Capa de API:** Implementada con Gin, gestiona las solicitudes y respuestas.
+- **Capa de Aplicación:** Implementa la lógica de negocios.
+- **Capa de Persistencia:** Gestionada por PostgreSQL para almacenar datos financieros.
+- **Capa de Mensajería:** Usando Kafka para procesar eventos en tiempo real.
+- **Capa de Orquestación y Contenerización:** Docker para contenedores y Kubernetes para orquestación.
+
+### **Tecnologías**
+
+- **Lenguaje:** **Go (Golang)**
+    - **Justificación:** Ideal para alto rendimiento y operaciones simultáneas con goroutines, manteniendo el código limpio y eficiente.
+- **Framework:** **Gin**
+    - **Justificación:** Framework rápido y ligero para crear APIs RESTful, ofreciendo un rendimiento superior y facilidad de uso.
+- **Persistencia:** **PostgreSQL**
+    - **Justificación:** Base de datos relacional confiable con soporte para transacciones ACID, capaz de manejar consultas complejas y escalabilidad.
+- **Mensajería:** **Kafka**
+    - **Justificación:** Plataforma de streaming que procesa y transmite grandes volúmenes de datos en tiempo real, esencial para informes y eventos.
+- **Contenerización:** **Docker**
+    - **Justificación:** Simplifica la creación y gestión de contenedores, garantizando consistencia entre entornos.
+- **Orquestación:** **Kubernetes**
+    - **Justificación:** Gestiona contenedores a gran escala, automatizando la implementación y gestión, garantizando escalabilidad y disponibilidad.
+- **Plataforma en la Nube:** **Google Cloud**
+    - **Justificación:** Ofrece servicios escalables y seguros para computación, almacenamiento y bases de datos, ideal para alojar el sistema bancario.
 
 Sube la implementación del caso a un repositorio público y comparte el enlace.
