@@ -94,21 +94,7 @@ En base a lo anterior, por favor responde los siguientes puntos:
 
 ### Sube la implementación del caso a un repositorio público y comparte el enlace.
 
-#### **1. Configuración del Entorno**
-
-1. **Creación del Directorio del Proyecto**
-
-   Se creó un nuevo directorio para el proyecto y se accedió a él desde el terminal.
-
-2. **Inicialización del Repositorio Git**
-
-   Se inicializó un repositorio Git en el directorio del proyecto.
-
-3. **Inicialización del Módulo Go**
-
-   Se inicializó un módulo Go con un nombre de módulo específico en el repositorio de Git.
-
-#### **2. Estructura de Directorios y Archivos**
+#### **1. Estructura de Directorios y Archivos**
 
 1. **Creación del Directorio `cmd` y Archivo `main.go`**
 
@@ -132,7 +118,7 @@ En base a lo anterior, por favor responde los siguientes puntos:
    - **`Dockerfile`**: Configura el entorno de ejecución de Docker para el aplicativo Go.
    - **`docker-compose.yml`**: Configura los servicios de Docker para el aplicativo, PostgreSQL y Kafka.
 
-#### **3. Configuración del Entorno y Pruebas**
+#### **2. Configuración del Entorno y Pruebas**
 
 1. **Configuración de la Base de Datos PostgreSQL**
 
