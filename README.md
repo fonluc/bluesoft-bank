@@ -151,4 +151,3 @@ En base a lo anterior, por favor responde los siguientes puntos:
 4. **Pruebas Adicionales**
 
    - Se escribieron pruebas unitarias para las funciones de servicio en `internal/services/account_service_test.go`.
-   - Se probaron las rutas de la API localmente utilizando herramientas como `curl`, `Postman`, o `httpie`.
