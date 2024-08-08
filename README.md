@@ -21,44 +21,44 @@ Crea un diagrama de clases que modele el problema, identifica los elementos prin
 
 ![Captura de tela 2024-08-07 210024](https://github.com/user-attachments/assets/0a03b025-bdfc-48c8-a407-6d0202ae3d7e)
 
-### **Estrutura `Conta`**
+### **Estructura `Cuenta`**
 
 - **Campos:**
-    - `ID int64` — Identificador único da conta.
-    - `Saldo float64` — Saldo atual da conta
-    - `Cliente Cliente` — Referência ao cliente que possui a conta.
+    - `ID int64` — Identificador único de la cuenta.
+    - `Saldo float64` — Saldo actual de la cuenta.
+    - `Cliente Cliente` — Referencia al cliente que posee la cuenta.
 - **Métodos:**
-    - `ConsultarSaldo() float64` — Consulta o saldo da conta.
-    - `ConsultarMovimentos() []Movimento` — Consulta os movimentos mais recentes da conta.
-    - `GerarExtratoMensal() []Movimento` — Gera o extrato mensal da conta.
+    - `ConsultarSaldo() float64` — Consulta el saldo de la cuenta.
+    - `ConsultarMovimientos() []Movimiento` — Consulta los movimientos más recientes de la cuenta.
+    - `GenerarExtractoMensual() []Movimiento` — Genera el extracto mensual de la cuenta.
 
-### **Estrutura `ContaAhorros`**
+### **Estructura `CuentaAhorros`**
 
-- **Campos e Métodos:** Herda campos e métodos de `Conta`. Representa uma conta de poupança para pessoas físicas.
+- **Campos y Métodos:** Hereda campos y métodos de `Cuenta`. Representa una cuenta de ahorros para personas físicas.
 
-### **Estrutura `ContaCorrente`**
+### **Estructura `CuentaCorriente`**
 
-- **Campos e Métodos:** Herda campos e métodos de `Conta`. Representa uma conta corrente para empresas.
+- **Campos y Métodos:** Hereda campos y métodos de `Cuenta`. Representa una cuenta corriente para empresas.
 
-### **Estrutura `Movimento`**
+### **Estructura `Movimiento`**
 
 - **Campos:**
-    - `ID int64` — Identificador único do movimento.
-    - `Tipo string` — Tipo do movimento (depósito ou saque).
-    - `Valor float64` — Valor do movimento.
-    - `Data time.Time` — Data do movimento.
+    - `ID int64` — Identificador único del movimiento.
+    - `Tipo string` — Tipo del movimiento (depósito o retiro).
+    - `Valor float64` — Valor del movimiento.
+    - `Fecha time.Time` — Fecha del movimiento.
 - **Métodos:**
-    - `RealizarDeposito(valor float64) error` — Realiza um depósito na conta.
-    - `RealizarSaque(valor float64) error` — Realiza um saque na conta.
+    - `RealizarDeposito(valor float64) error` — Realiza un depósito en la cuenta.
+    - `RealizarRetiro(valor float64) error` — Realiza un retiro en la cuenta.
 
-### **Estrutura `Cliente`**
+### **Estructura `Cliente`**
 
 - **Campos:**
-    - `ID int64` — Identificador único do cliente.
-    - `Nome string` — Nome do cliente.
-    - `Cidade string` — Cidade de origem do cliente.
+    - `ID int64` — Identificador único del cliente.
+    - `Nombre string` — Nombre del cliente.
+    - `Ciudad string` — Ciudad de origen del cliente.
 - **Métodos:**
-    - `ObterRelatorioTransacoes(mes time.Month, ano int) []Movimento` — Obtém o relatório de transações do cliente para um mês específico.
+    - `ObtenerInformeTransacciones(mes time.Month, año int) []Movimiento` — Obtiene el informe de transacciones del cliente para un mes específico.
 
 ¿Qué arquitectura y tecnologías usarías para resolver el caso Bluesoft Bank?
 Sube la implementación del caso a un repositorio público y comparte el enlace.
